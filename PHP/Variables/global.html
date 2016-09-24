@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Variables Scope</title>
+</head>
+
+<body>
+    <div>
+        <h3>PHP Variables Scopes</h3>
+    </div>
+
+    <div>
+      <h4>Learning about variables</h4>
+      <ul>
+        <li>Variables can be declared anywhere in the script</li>
+        <li>The scope of a variables is part of the script where the variable can be referenced to :</li>
+        <li>PHP has three different variables scope:</li>
+          <ul>
+            <li>local</li>
+            <li>global</li>
+            <li>static</li>
+          </ul>
+         <li>A Variable declared <strong>outside</strong> a function has a GLOBAL SCOPE and can only be accessed from the outside. </li>
+      </ul>
+    </div>
+
+
+<?php
+  $x = 5; // global scope
+
+  function myTest() {
+  // using x inside this function will generate an error
+  echo "<p>Variable x inside function is: $x</p>";
+  } 
+  myTest();
+
+  echo "<p>Variable x outside function is: $x</p>";
+?>
+
+
+</body>
+
+</html>
