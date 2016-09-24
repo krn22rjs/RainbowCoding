@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Static Keyword</title>
+</head>
+
+<body>
+    <div>
+        <h2>The static Keyword </h2>
+    </div>
+    <div>
+        <p>Normally, when a function is completed/executed, all of its variables are deleted. However, sometimes we want a local variable NOT to be deleted.</p>
+        <p>To do this, use the static keyword when you first declare the variable:</p>
+    </div>
+
+
+<!-- php static keyword syntax -->
+<?php
+function myTest() {
+    static $x = 0;
+    echo $x;
+    $x++;
+}
+
+myTest();
+echo "<br>";
+myTest();
+echo "<br>";
+myTest();
+?> 
+
+</body>
+</html>
