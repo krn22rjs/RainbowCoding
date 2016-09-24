@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local</title>
+</head>
+<body>
+<div>
+  <h1>Local Variables</h1>
+  <h3>A variable can be declared within a function has a LOCAL SCOPE
+  and can only be accessed within that function: </h3>
+</div>
+
+<!-- PHP CODE SYNTAX -->
+<?php
+function myTest() {
+    $x = 5; // local scope
+    echo "<p>Variable x inside function is: $x</p>";
+} 
+myTest();
+
+// using x outside the function will generate an error
+echo "<p>Variable x outside function is: $x</p>";
+?>
+</body>
+</html>
