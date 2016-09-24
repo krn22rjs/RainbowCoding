@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Global Variables</title>
+</head>
+
+<body>
+    <div>
+        <h1>More about global variables</h1>
+    </div>
+    <div>
+        <p>PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable. This array is also accessible from within functions and can be used to update global variables directly.</p>
+    </div>
+    <!-- php code goes here -->
+    <?php
+      $x = 5;
+      $y = 10;
+
+    function myTest() {
+    $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+    } 
+
+    myTest();
+    echo $y;
+    ?>
+</body>
+
+</html>
